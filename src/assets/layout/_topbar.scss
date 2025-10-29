@@ -81,7 +81,7 @@
     }
 
     .layout-topbar-actions {
-        margin-left: auto;
+        margin-inline-start: auto;
         display: flex;
         gap: 1rem;
     }
@@ -106,8 +106,8 @@
         }
 
         .layout-menu-button {
-            margin-left: 0;
-            margin-right: 0.5rem;
+            margin-inline-start: 0;
+            margin-inline-end: 0.5rem;
         }
 
         .layout-topbar-menu-button {

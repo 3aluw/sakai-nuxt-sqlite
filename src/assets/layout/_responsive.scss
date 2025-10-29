@@ -1,3 +1,4 @@
+@use 'mixins';
 @media screen and (min-width: 1960px) {
     .layout-main,
     .landing-wrapper {
@@ -11,13 +12,13 @@
     .layout-wrapper {
         &.layout-overlay {
             .layout-main-container {
-                margin-left: 0;
-                padding-left: 2rem;
+                margin-inline-start: 0;
+                padding-inline-start: 2rem;
             }
 
             .layout-sidebar {
-                transform: translateX(-100%);
-                left: 0;
+                @include mixins.rtl-transform(-100%);
+                inset-inline-start: 0;
                 top: 0;
                 height: 100vh;
                 border-top-left-radius: 0;
@@ -41,18 +42,18 @@
 
         &.layout-static {
             .layout-main-container {
-                margin-left: 22rem;
+                margin-inline-start: 22rem;
             }
 
             &.layout-static-inactive {
                 .layout-sidebar {
-                    transform: translateX(-100%);
+                    @include mixins.rtl-transform(-100%);;
                     left: 0;
                 }
 
                 .layout-main-container {
-                    margin-left: 0;
-                    padding-left: 2rem;
+                    margin-inline-start: 0;
+                    padding-inline-start: 2rem;
                 }
             }
         }
@@ -70,12 +71,12 @@
 
     .layout-wrapper {
         .layout-main-container {
-            margin-left: 0;
-            padding-left: 2rem;
+            margin-inline-start: 0;
+            padding-inline-start: 2rem;
         }
 
         .layout-sidebar {
-            transform: translateX(-100%);
+            @include mixins.rtl-transform(-100%);;
             left: 0;
             top: 0;
             height: 100vh;

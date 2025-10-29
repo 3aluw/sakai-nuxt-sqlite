@@ -13,3 +13,17 @@
     outline-offset: -1px;
     box-shadow: inset var(--focus-ring-shadow);
 }
+
+@mixin rtl-transform($ltr, $rtl: null) {
+  @if $rtl == null {
+    $rtl: $ltr * -1; // invert automatically if not provided
+  }
+
+  [dir="ltr"] & {
+    transform: translateX($ltr);
+  }
+
+  [dir="rtl"] & {
+    transform: translateX($rtl);
+  }
+}
