@@ -6,6 +6,8 @@
   </div>
 </template>
 <script setup>
+/* 
+// for arabic apps
 import { ar } from '~/assets/prime-vue-ar.json'
 const primeConfig = usePrimeVue()
  primeConfig.config.locale = ar
@@ -15,5 +17,6 @@ useHead({
     lang: 'ar'
   }
 })
+*/
 </script>
 
