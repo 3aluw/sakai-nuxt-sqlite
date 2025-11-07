@@ -1,7 +1,8 @@
 # Sakai Nuxt
 
 Sakai Nuxt is a Nuxt-based application template derived from the original [Sakai Vue](https://github.com/primefaces/sakai-vue) project. This template enhances the development experience by leveraging Nuxt features like server-side rendering (SSR), static site generation (SSG), and seamless file-based routing.
-
+with a ready to use sqlite DB and RTL support.
+I just added sqlite DB / RTL support to [sakai-nuxt](https://github.com/suprimpoudel/sakai-nuxt)
 Live Demo: [sakai-nuxt.netlify.app](https://sakai-nuxt.netlify.app)
 
 ## Overview
@@ -39,6 +40,9 @@ git clone https://github.com/suprimpoudel/sakai-nuxt
 cd sakai-nuxt  
 npm install  
 ```  
+### Set up your db at db/ts file
+create your tables
+### If you want to build an RTL app uncomment the code at app.vue
 
 ### Running the Development Server
 
